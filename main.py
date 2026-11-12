@@ -20,9 +20,9 @@ face_mesh = mp.solutions.face_mesh.FaceMesh(
 cam = cv2.VideoCapture(0)
 
 # Thresholds 
-eye_opening_threshold = 0.026
+eye_opening_threshold = 0.030
 mouth_open_threshold = 0.04
-squinting_threshold = 0.019
+squinting_threshold = 0.020
 
 def cat_shock(face_landmark_points):
     l_top = face_landmark_points.landmark[159]
